@@ -11,112 +11,55 @@
    * Copyright 2011-2023 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+
+:root {
+  --linkedin-primary: #0A66C2;
+  --linkedin-primary-dark: #004182;
+  --linkedin-bg-light: #EEF3F8;
+  --linkedin-bg-subtle: #D0E8FF;
+  --linkedin-border: #7FBFF8;
+}
+
+
 :root,
 [data-bs-theme="light"] {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #80425F;
-  --bs-secondary: #58677c;
-  --bs-primary-rgb: 128, 66, 95;
-  --bs-secondary-rgb: 88.2236024845, 102.7080745342, 123.7763975155;
-  --bs-primary-text-emphasis: #052c65;
-  --bs-secondary-text-emphasis: #2b2f32;
-  --bs-success-text-emphasis: #0a3622;
-  --bs-info-text-emphasis: #055160;
-  --bs-warning-text-emphasis: #664d03;
-  --bs-danger-text-emphasis: #58151c;
-  --bs-light-text-emphasis: #495057;
-  --bs-dark-text-emphasis: #495057;
-  --bs-primary-bg-subtle: #cfe2ff;
-  --bs-secondary-bg-subtle: #e2e3e5;
-  --bs-success-bg-subtle: #d1e7dd;
-  --bs-info-bg-subtle: #cff4fc;
-  --bs-warning-bg-subtle: #fff3cd;
-  --bs-danger-bg-subtle: #f8d7da;
-  --bs-light-bg-subtle: #fcfcfd;
-  --bs-dark-bg-subtle: #ced4da;
-  --bs-primary-border-subtle: #9ec5fe;
-  --bs-secondary-border-subtle: #c4c8cb;
-  --bs-success-border-subtle: #a3cfbb;
-  --bs-info-border-subtle: #9eeaf9;
-  --bs-warning-border-subtle: #ffe69c;
-  --bs-danger-border-subtle: #f1aeb5;
-  --bs-light-border-subtle: #e9ecef;
-  --bs-dark-border-subtle: #adb5bd;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
-  --bs-body-bg-rgb: 255, 255, 255;
-  --bs-emphasis-color: #000;
-  --bs-emphasis-color-rgb: 0, 0, 0;
-  --bs-secondary-color: rgba(33, 37, 41, 0.75);
-  --bs-secondary-color-rgb: 33, 37, 41;
-  --bs-secondary-bg: #e9ecef;
-  --bs-secondary-bg-rgb: 233, 236, 239;
-  --bs-tertiary-color: rgba(33, 37, 41, 0.5);
-  --bs-tertiary-color-rgb: 33, 37, 41;
-  --bs-tertiary-bg: #f8f9fa;
-  --bs-tertiary-bg-rgb: 248, 249, 250;
-  --bs-heading-color: inherit;
-  --bs-link-color: #0d6efd;
-  --bs-link-color-rgb: 13, 110, 253;
-  --bs-link-decoration: underline;
-  --bs-link-hover-color: #0a58ca;
-  --bs-link-hover-color-rgb: 10, 88, 202;
-  --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
-  --bs-border-width: 1px;
-  --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.375rem;
-  --bs-border-radius-sm: 0.25rem;
-  --bs-border-radius-lg: 0.5rem;
-  --bs-border-radius-xl: 1rem;
-  --bs-border-radius-xxl: 2rem;
-  --bs-border-radius-2xl: var(--bs-border-radius-xxl);
-  --bs-border-radius-pill: 50rem;
-  --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-  --bs-focus-ring-width: 0.25rem;
-  --bs-focus-ring-opacity: 0.25;
-  --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
-  --bs-form-valid-color: #198754;
-  --bs-form-valid-border-color: #198754;
-  --bs-form-invalid-color: #dc3545;
-  --bs-form-invalid-border-color: #dc3545;
+
+  --bs-primary: #0A66C2;
+  --bs-primary-rgb: 10, 102, 194;
+
+  --bs-secondary: #004182;
+  --bs-secondary-rgb: 0, 65, 130;
+
+
+  --bs-primary-bg-subtle: #D0E8FF;
+  --bs-primary-border-subtle: #7FBFF8;
+
+
+  --bs-primary-text-emphasis: #004182;
+  --bs-secondary-text-emphasis: #0A66C2;
+
+  --bs-link-color: #0A66C2;
+  --bs-link-hover-color: #004182;
+  --bs-link-color-rgb: 10, 102, 194;
+  --bs-link-hover-color-rgb: 0, 65, 130;
+
+
+  --bs-body-bg: #FFFFFF;
+  --bs-tertiary-bg: #EEF3F8;
+
+
+  --bs-border-color: #D0E8FF;
+  --bs-border-color-translucent: rgba(10, 102, 194, 0.25);
+
+
+  --bs-btn-bg: #0A66C2;
+  --bs-btn-border-color: #0A66C2;
+  --bs-btn-hover-bg: #004182;
+  --bs-btn-hover-border-color: #004182;
+
+  --bs-success: #198754;
+  --bs-danger: #dc3545;
+
 }
 
 [data-bs-theme="dark"] {
@@ -11748,6 +11691,19 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 .theme-progress-bar-dark {
   background-color: #80425F;
 }
+.resume-header {
+  background-color: var(--linkedin-primary) !important;
+}
+
+.name,
+.title,
+.resume-social a {
+  color: #fff !important;
+}
+
+.resume-social i {
+  color: #fff !important;
+}
 
 .resume-wrapper {
   padding-top: 30px;
@@ -11759,7 +11715,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-header {
-  background: #80425F;
+
   color: rgba(255, 255, 255, 0.9);
   height: 220px;
 }
@@ -11936,7 +11892,199 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   }
 }
 .btn {
-  border: 1px solid rgba(var(--bs-black-rgb), var(--bs-bg-opacity));
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
-  margin: 2em auto;
+  margin: 8px;
+  background-color: #0A66C2 !important;
+  border-color: #0A66C2 !important;
+  color: #fff !important;
+}
+
+.btn:hover {
+  background-color: #004182 !important;
+  border-color: #004182 !important;
+  color: white;
+}
+.badge.bg-secondary {
+  background-color: #0A66C2 !important;
+}
+
+.badge-light {
+  background-color: #EEF3F8 !important;
+  color: #0A66C2 !important;
+  border: 1px solid #7FBFF8;
+}
+
+
+a,
+.text-link {
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover,
+.text-link:hover {
+  color: white;
+}
+
+.btn {
+  background-color: var(--linkedin-primary) !important;
+  border-color: var(--linkedin-primary) !important;
+  color: #fff !important;
+}
+
+.btn:hover {
+  background-color: var(--linkedin-primary-dark) !important;
+  border-color: var(--linkedin-primary-dark) !important;
+}
+
+
+.resume-section-title,
+.resume-position-title,
+.resume-timeline-item-desc-heading {
+  color: var(--linkedin-primary-dark) !important;
+}
+
+
+.resume-timeline::before {
+  background: var(--linkedin-primary) !important;
+}
+
+.resume-timeline-item::before {
+  background: var(--linkedin-primary) !important;
+  border-color: var(--linkedin-primary) !important;
+}
+
+.badge.bg-secondary {
+  background-color: var(--linkedin-primary) !important;
+  color: #fff !important;
+}
+
+.badge-light {
+  background-color: var(--linkedin-bg-light) !important;
+  border: 1px solid var(--linkedin-border) !important;
+  color: var(--linkedin-primary) !important;
+}
+
+.theme-progress-bar-dark {
+  background-color: var(--linkedin-primary) !important;
+}
+
+hr,
+.resume-section,
+.resume-timeline-item {
+  border-color: var(--linkedin-border) !important;
+}
+
+.resume-skills-cat {
+  color: var(--linkedin-primary-dark) !important;
+}
+
+.fa-fw,
+.fa-linkedin-in,
+.fa-github-alt,
+.far.fa-envelope {
+  color: #084298 !important;
+}
+
+.resume-wrapper-inner {
+  background-color: #fff !important;
+}
+
+body {
+  background-color: var(--linkedin-bg-light) !important;
+}
+
+.resume-header .fa-envelope {
+  color: #ffffff !important;
+}
+
+
+.fa-container {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+}
+
+.list-inline-item {
+    margin-bottom: 6px !important;
+    margin-right: 6px !important;
+}
+.cv-button-wrapper {
+    margin-top: 10px;
+    margin-bottom: 30px; 
+    text-align: left; 
+}
+
+.resume-wrapper-inner {
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.resume-section-title {
+    color: #0A66C2 !important;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.resume-header .name {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.resume-timeline-item::before {
+    background: #0A66C2;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 3px #0A66C2;
+}
+
+.list-inline .badge {
+    background: #0A66C2 !important;
+    color: white !important;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.resume-section {
+    margin-bottom: 60px;
+}
+
+.btn {
+    background: #0A66C2 !important;
+    color: #fff !important;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn:hover {
+    background: #004182 !important;
+}
+
+
+.progress {
+    height: 10px;
+    border-radius: 6px;
+    background: #e3eaf3;
+}
+
+.theme-progress-bar-dark {
+    background: #0A66C2 !important;
+}
+
+
+.resume-header {
+    background: linear-gradient(90deg, #0A66C2, #004182);
+}
+
+.resume-section .badge-light {
+    background-color: #e7f3ff !important; /* azul bem clarinho */
+    color: #0a66c2 !important;            /* azul LinkedIn */
+    border: 1px solid #0a66c2 !important;
+    border-radius: 6px !important;
+    padding: 4px 10px;
+    font-weight: 600;
 }
